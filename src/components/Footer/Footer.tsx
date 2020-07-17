@@ -1,5 +1,5 @@
 import React from "react"
 
-export const Header: React.FC = () => {
+export const Footer: React.FC = () => {
   return <div>Footer ni!</div>
 }
