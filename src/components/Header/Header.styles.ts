@@ -1,6 +1,7 @@
 import styled from "styled-components"
 
 export const HeaderStyled = styled.header`
+  display: flex;
   background: "white";
   margin-bottom: "1.45rem";
   color: #000;
