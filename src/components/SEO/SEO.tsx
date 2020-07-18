@@ -13,7 +13,7 @@ import { useStaticQuery, graphql } from "gatsby"
 interface PageProps {
   description: string
   lang: string
-  meta: string
+  meta?: string
   title: string
 }
 
