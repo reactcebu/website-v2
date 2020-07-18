@@ -1,4 +1,11 @@
-# React Cebu website v2
+<p align="center">
+  <a href="https://react.jscebu.org">
+    <img alt="React Cebu" src="https://reactcebu-sitev2.netlify.app/static/logo-70642a5a45ddc07fcb0fb2b893d7124c.png"  />
+  </a>
+</p>
+<h1 align="center">
+  Website v2
+</h1>
 
 This is the source code of our React community's website at react.jscebu.org. This site wouldn't be possible without the help of our community members so we'd like to give all due credits to the awesome Reactors who shared their time and helped us put this website.
 
