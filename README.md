@@ -1,99 +1,70 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
+  <a href="https://react.jscebu.org">
+    <img alt="React Cebu" src="https://reactcebu-sitev2.netlify.app/static/logo-70642a5a45ddc07fcb0fb2b893d7124c.png"  />
   </a>
 </p>
 <h1 align="center">
-  Gatsby's default starter
+  Website v2
 </h1>
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+This is the source code of our React community's website at react.jscebu.org. This site wouldn't be possible without the help of our community members so we'd like to give all due credits to the awesome Reactors who shared their time and helped us put this website.
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+## How to contribute?
+
+1. Fork this repo.
+2. Clone and update files in your forked repo.
+3. See [Main Project Board](https://github.com/reactcebu/website-v2/projects/1) and find tasks you'd like to work on. If you need more info, don't hesitate to comment.
+4. Before you worked on something, make sure to move the card to [In Progress](https://github.com/reactcebu/website-v2/projects/1#column-10071030) and assigned yourself to the card/task.
+5. Commit and push changes to your forked repo.
+6. Once done, create a pull request to the [main repo](https://github.com/reactcebu/website-v2/).
+7. [React Cebu InkTeam](https://github.com/orgs/reactcebu/teams/inkteam) will review your code and once everything's cleared up, your PR will be merged once approved. Yay! 🦄
+
+NOTE: We highly discouraged pushing directly to our branches.
 
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+After forking this repo to your account, you can follow the steps below to start hacking! 💪
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+- Begin by cloning your forked repo.
 
-    ```shell
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
-    ```
+```bash
+git clone <YOUR_FORKED_REPO_URL>
+```
 
-1.  **Start developing.**
+- Go to site directory.
 
-    Navigate into your new site’s directory and start it up.
+```bash
+cd website-v2
+```
 
-    ```shell
-    cd my-default-starter/
-    gatsby develop
-    ```
+- Install dependencies
 
-1.  **Open the source code and start editing!**
+```bash
+yarn install
+```
 
-    Your site is now running at `http://localhost:8000`!
+- Run development server
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+```bash
+yarn start
+```
 
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+Once successful, your local development server should start at http://localhost:8000
 
-## 🧐 What's inside?
+## Technology Stack
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+This site is made using [Gatsby](https://www.gatsbyjs.org/). We're using [TypeScript](https://www.typescriptlang.org/) and we understand that this may seem to put off new developers but don't worry, our TypeScript setting is forgiving so you could work with just JS knowledge only. For styling, we're using popular CSS-In-JS [Styled Components](https://styled-components.com/).
 
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
-
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
-
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
-
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
-
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
-
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
-
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
-
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
-
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
-
-9.  **`LICENSE`**: This Gatsby starter is licensed under the 0BSD license. This means that you can see this file as a placeholder and replace it with your own license.
-
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
-
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
-
-12. **`README.md`**: A text file containing useful reference information about your project.
-
-## 🎓 Learning Gatsby
-
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
+To learn more about Gatsby 🎓, see below:
 
 - **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
 
 - **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
 
-## 💫 Deploy
+To quickly learn TypeScript (TS), the [5 minutes guide is a good place to start](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html). Check out their [docs](https://www.typescriptlang.org/docs/home.html) which comes handy should you need more info.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+To learn more about Styled Components, [click here on this link](https://styled-components.com/).
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/gatsbyjs/gatsby-starter-default)
+## Credits
 
-<!-- AUTO-GENERATED-CONTENT:END -->
+Thank you to all Reactors for your contributions.
