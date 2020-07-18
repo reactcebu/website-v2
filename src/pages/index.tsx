@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
-
 import { Layout, Header } from "../components"
+import ReactorsChat from "../assets/images/reactors-chat.png"
 
 const IndexPage = () => (
   <Layout>
@@ -16,6 +16,7 @@ const IndexPage = () => (
 
     <section>
       <h2>You are not alone, we're here</h2>
+      <img src={ReactorsChat} alt="Chat with Reactors" />
     </section>
 
     <section>
