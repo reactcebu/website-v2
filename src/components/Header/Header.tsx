@@ -1,23 +1,32 @@
 import React from "react"
-import { Link } from "gatsby"
-import { HeaderStyled, Nav, H1, NavLinks } from "./Header.styles"
+import { Link, useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
+import { HeaderStyled, NavLinks } from "./Header.styles"
 
 interface ComponentProps {
   siteTitle: string
 }
 
-import Logo from "../../assets/images/logo.png"
-
 export const Header: React.FC<ComponentProps> = ({
   siteTitle,
 }: ComponentProps) => {
+  const data = useStaticQuery(graphql`
+    query {
+      logo: file(relativePath: { eq: "logo.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+
   return (
     <HeaderStyled>
-      <H1>
-        <Link to="/">
-          <img src={Logo} />
-        </Link>
-      </H1>
+      <Link to="/" style={{ width: "300px" }}>
+        <Img fluid={data.logo.childImageSharp.fluid} />
+      </Link>
       <NavLinks>
         <Link to="/about">About</Link>
         <Link to="/events">Events</Link>
