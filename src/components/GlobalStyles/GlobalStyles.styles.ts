@@ -3,7 +3,7 @@ import { createGlobalStyle } from "styled-components"
 
 export const GlobalStyles = createGlobalStyle`
   html {
-    font-family: sans-serif;
+    font-family: "Proxima Nova", sans-serif !important;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
   }
@@ -204,7 +204,6 @@ export const GlobalStyles = createGlobalStyle`
   }
   body {
     color: hsla(0, 0%, 0%, 0.8);
-    font-family: georgia, serif;
     font-weight: normal;
     word-wrap: break-word;
     font-kerning: normal;
@@ -234,8 +233,7 @@ export const GlobalStyles = createGlobalStyle`
     padding-top: 0;
     margin-bottom: 1.45rem;
     color: inherit;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: "Proxima Nova", sans-serif;
     font-weight: bold;
     text-rendering: optimizeLegibility;
     font-size: 2.25rem;
@@ -251,8 +249,7 @@ export const GlobalStyles = createGlobalStyle`
     padding-top: 0;
     margin-bottom: 1.45rem;
     color: inherit;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: "Proxima Nova", sans-serif;
     font-weight: bold;
     text-rendering: optimizeLegibility;
     font-size: 1.62671rem;
@@ -268,8 +265,7 @@ export const GlobalStyles = createGlobalStyle`
     padding-top: 0;
     margin-bottom: 1.45rem;
     color: inherit;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: "Proxima Nova", sans-serif;
     font-weight: bold;
     text-rendering: optimizeLegibility;
     font-size: 1.38316rem;
@@ -285,8 +281,7 @@ export const GlobalStyles = createGlobalStyle`
     padding-top: 0;
     margin-bottom: 1.45rem;
     color: inherit;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: "Proxima Nova", sans-serif;
     font-weight: bold;
     text-rendering: optimizeLegibility;
     font-size: 1rem;
@@ -302,8 +297,7 @@ export const GlobalStyles = createGlobalStyle`
     padding-top: 0;
     margin-bottom: 1.45rem;
     color: inherit;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: "Proxima Nova", sans-serif;
     font-weight: bold;
     text-rendering: optimizeLegibility;
     font-size: 0.85028rem;
@@ -319,8 +313,7 @@ export const GlobalStyles = createGlobalStyle`
     padding-top: 0;
     margin-bottom: 1.45rem;
     color: inherit;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: "Proxima Nova", sans-serif;
     font-weight: bold;
     text-rendering: optimizeLegibility;
     font-size: 0.78405rem;

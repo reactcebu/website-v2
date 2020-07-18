@@ -1674,6 +1674,14 @@
   resolved "https://registry.yarnpkg.com/@types/history/-/history-4.7.6.tgz#ed8fc802c45b8e8f54419c2d054e55c9ea344356"
   integrity sha512-GRTZLeLJ8ia00ZH8mxMO8t0aC9M1N9bN461Z2eaRurJo6Fpa+utgCwLzI4jQHcrdzuzp5WPN9jRwpsCQ1VhJ5w==
 
+"@types/hoist-non-react-statics@*":
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/@types/hoist-non-react-statics/-/hoist-non-react-statics-3.3.1.tgz#1124aafe5118cb591977aeb1ceaaed1070eb039f"
+  integrity sha512-iMIqiko6ooLrTh1joXodJK5X9xeEALT1kM5G3ZLhD3hszxBdIEd5C75U834D9mLcINgD4OyZf5uQXjkuYydWvA==
+  dependencies:
+    "@types/react" "*"
+    hoist-non-react-statics "^3.3.0"
+
 "@types/http-proxy@^1.17.4":
   version "1.17.4"
   resolved "https://registry.yarnpkg.com/@types/http-proxy/-/http-proxy-1.17.4.tgz#e7c92e3dbe3e13aa799440ff42e6d3a17a9d045b"
@@ -1768,6 +1776,13 @@
     "@types/history" "*"
     "@types/react" "*"
 
+"@types/react-native@*":
+  version "0.63.1"
+  resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.63.1.tgz#81da30aeaaa034039efd23ccb1c54786b1630966"
+  integrity sha512-mo2DAgliCqdNyivBa0/JL8JIkebt9TU0ATmsvtUvypIP5qN+YJekbVPpHt6WLXEZyBm7LtmIqxbjIHqeoaojsg==
+  dependencies:
+    "@types/react" "*"
+
 "@types/react@*":
   version "16.9.41"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.41.tgz#925137ee4d2ff406a0ecf29e8e9237390844002e"
@@ -1783,6 +1798,16 @@
   dependencies:
     "@types/glob" "*"
     "@types/node" "*"
+
+"@types/styled-components@^5.1.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@types/styled-components/-/styled-components-5.1.1.tgz#17c3b3a299aa38254189e04a72a8ee009a22e42d"
+  integrity sha512-fIjKvDU1LJExBZWEQilHqzfpOK4KUwBsj5zC79lxa94ekz8oDQSBNcayMACBImxIuevF+NbBGL9O/2CQ67Zhig==
+  dependencies:
+    "@types/hoist-non-react-statics" "*"
+    "@types/react" "*"
+    "@types/react-native" "*"
+    csstype "^2.2.0"
 
 "@types/tmp@^0.0.33":
   version "0.0.33"
@@ -6105,6 +6130,14 @@ gatsby-plugin-typescript@^2.4.8:
     "@babel/preset-typescript" "^7.10.1"
     "@babel/runtime" "^7.10.3"
     babel-plugin-remove-graphql-queries "^2.9.7"
+
+gatsby-plugin-web-font-loader@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-web-font-loader/-/gatsby-plugin-web-font-loader-1.0.4.tgz#c50bdb0c1980110b3fd213a5be70feb2459514c3"
+  integrity sha512-3c39bX9CcsYJQFhhmTyjuMJSqpld2rX+HsTOxP9k1PKFR4Rvo3lpzBW4d1tVpmUesR8BNL6u9eHT7/XksS1iog==
+  dependencies:
+    babel-runtime "^6.26.0"
+    webfontloader "^1.6.28"
 
 gatsby-react-router-scroll@^3.0.7:
   version "3.0.7"
@@ -13555,6 +13588,11 @@ web-namespaces@^1.0.0, web-namespaces@^1.1.2:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/web-namespaces/-/web-namespaces-1.1.4.tgz#bc98a3de60dadd7faefc403d1076d529f5e030ec"
   integrity sha512-wYxSGajtmoP4WxfejAPIr4l0fVh+jeMXZb08wNc0tMg6xsfZXj3cECqIK0G7ZAqUq0PP8WlMDtaOGVBTAWztNw==
+
+webfontloader@^1.6.28:
+  version "1.6.28"
+  resolved "https://registry.yarnpkg.com/webfontloader/-/webfontloader-1.6.28.tgz#db786129253cb6e8eae54c2fb05f870af6675bae"
+  integrity sha1-23hhKSU8tujq5UwvsF+HCvZnW64=
 
 webpack-dev-middleware@^3.7.2:
   version "3.7.2"
