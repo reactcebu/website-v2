@@ -1,7 +1,7 @@
 import React from "react"
 import Img from "gatsby-image"
 import { Link, useStaticQuery, graphql } from "gatsby"
-import { Layout } from "../components"
+import { Layout, Newsletter } from "../components"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -21,10 +21,7 @@ const IndexPage = () => {
       <section>
         <h1>Meet and collab with other React developers in Cebu</h1>
         <p>React Cebu is a community for developers by developers</p>
-        <form>
-          <input type="text" placeholder="Your email" />
-          <button type="submit">Join Newsletter</button>
-        </form>
+        <Newsletter />
       </section>
 
       <section>
