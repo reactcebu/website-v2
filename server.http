@@ -1,0 +1,12 @@
+# Fails: Only POST method is allowed
+GET http://localhost:9000/.netlify/functions/post-signup-newsletter
+
+###
+
+# Succeeds: POST request is allowed
+POST http://localhost:9000/.netlify/functions/post-signup-newsletter
+Content-Type: application/json
+
+{
+  "email": "galangdj+test1@gmail.com"
+}
