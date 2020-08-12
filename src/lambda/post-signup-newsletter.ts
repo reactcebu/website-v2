@@ -22,6 +22,7 @@ export async function handler(event, context) {
     MAILCHIMP_SUBDOMAIN,
   } = process.env
 
+  // Ref: https://mailchimp.com/developer/api/marketing/list-members/add-member-to-list/
   return axios
     .post(
       `https://${MAILCHIMP_SUBDOMAIN}.api.mailchimp.com/3.0/lists/${MAILCHIMP_LIST_ID}/members`,
