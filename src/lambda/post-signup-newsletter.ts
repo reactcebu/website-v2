@@ -25,7 +25,7 @@ export async function handler(event, context) {
   return axios
     .post(
       `https://${MAILCHIMP_SUBDOMAIN}.api.mailchimp.com/3.0/lists/${MAILCHIMP_LIST_ID}/members`,
-      { email_address: email, status: "pending" },
+      { email_address: email, status: "pending", tags: ["Website Signup"] },
       {
         headers: {
           "Content-Type": "application/json",
