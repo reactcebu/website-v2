@@ -8,5 +8,5 @@ POST http://localhost:9000/.netlify/functions/post-signup-newsletter
 Content-Type: application/json
 
 {
-  "email": "galangdj+test1@gmail.com"
+  "email": "galangdj+test3@gmail.com"
 }
