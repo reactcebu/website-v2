@@ -1,11 +1,14 @@
+import { Button } from "../Button"
 import styled from "styled-components"
 
 export const HeaderStyled = styled.header`
+  max-width: 1440px;
   padding: 24px;
   margin-bottom: "1.45rem";
   display: flex;
   background: "white";
   color: #000;
+  margin: 0 auto;
 `
 
 export const Nav = styled.div`
@@ -26,13 +29,14 @@ export const NavLinks = styled.div`
   }
 `
 
-export const Button = styled.button`
+export const StyledButton = styled(Button)`
   padding: 0px 24px;
   margin-left: auto;
   height: 48px;
   align-self: center;
   border: none;
-  background-color: hsl(240, 74%, 31%);
+  background-color: red;
   color: hsl(230, 100%, 91%);
   cursor: pointer;
+  font-size: 24px;
 `

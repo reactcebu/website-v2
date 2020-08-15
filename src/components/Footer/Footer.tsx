@@ -1,23 +1,29 @@
-import React from "react"
-import { FooterContainer, List, ListItem, Link } from "./Footer.styles"
+import {
+  Container,
+  FooterContainer,
+  Link,
+  List,
+  ListItem,
+} from "./Footer.styles"
 
-const links = ["Status", "Privacy & Terms", "Contact us", "Change region"]
+import React from "react"
+
+const links = ["About", "Events", "Contact us"]
 
 export const Footer: React.FC = () => {
   return (
     <FooterContainer>
-      {/* This commented out code can be deleted anytime. */}
-      {/* © {new Date().getFullYear()}Built with
-      <GatsbyLink href="https://www.gatsbyjs.org">Gatsby</GatsbyLink> */}
-      <List>
-        {links.map(function (link) {
-          return (
-            <ListItem key={link}>
-              <Link href={`/${link}`}>{link}</Link>
-            </ListItem>
-          )
-        })}
-      </List>
+      <Container>
+        <List>
+          {links.map(function (link) {
+            return (
+              <ListItem key={link}>
+                <Link href={`/${link}`}>{link}</Link>
+              </ListItem>
+            )
+          })}
+        </List>
+      </Container>
     </FooterContainer>
   )
 }

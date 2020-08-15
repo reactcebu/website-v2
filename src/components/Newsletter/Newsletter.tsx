@@ -1,3 +1,4 @@
+import { StyledButton as Button, TextField } from "./Newsletter.styles"
 import React, { useRef, useState } from "react"
 
 export const Newsletter: React.FC = () => {
@@ -55,8 +56,7 @@ export const Newsletter: React.FC = () => {
         className="validate"
         target="_blank"
       >
-        <label htmlFor="mce-EMAIL">Subscribe</label>
-        <input
+        <TextField
           type="email"
           name="email"
           className="email"
@@ -65,13 +65,7 @@ export const Newsletter: React.FC = () => {
           ref={emailInput}
           required
         />
-        <input
-          type="submit"
-          value="Subscribe"
-          name="subscribe"
-          id="mc-embedded-subscribe"
-          className="button"
-        />
+        <Button>Join Newsletter</Button>
         <div
           style={{ position: `absolute`, left: `-5000px` }}
           aria-hidden="true"

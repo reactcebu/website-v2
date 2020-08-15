@@ -5,6 +5,12 @@ export const FooterContainer = styled.footer`
   background-color: gainsboro;
 `
 
+export const Container = styled.div`
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 24px;
+`
+
 export const GatsbyLink = styled.a`
   margin-left: 6px;
 `
