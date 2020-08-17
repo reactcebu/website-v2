@@ -1,10 +1,8 @@
 import { Layout, Newsletter } from "../components"
 import { Link, graphql, useStaticQuery } from "gatsby"
 
-import { Button } from "../components"
 import Img from "gatsby-image"
 import React from "react"
-import ReactorsCollaborating from "../assets/images/reactors-collaborating.png"
 import styled from "styled-components"
 
 const Section = styled.section`
@@ -59,6 +57,38 @@ const MarketingSection = styled(Section)`
   max-width: 100%;
   background-color: #092851;
   color: #fafafa;
+  padding: 80px 0;
+
+  > h2 {
+    margin-bottom: 28px;
+  }
+
+  > a {
+    color: #092851;
+    background-color: #fff;
+    padding: 20px 25px;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 15px;
+    border-radius: 4px;
+    transition: box-shadow 420ms cubic-bezier(0.165, 0.84, 0.44, 1),
+      color 420ms cubic-bezier(0.165, 0.84, 0.44, 1),
+      background 420ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+
+  > a:first-child {
+    margin-right: 15px;
+  }
+
+  > a:last-child {
+    border: 1px solid #fff;
+    background-color: #092851;
+    color: #fff;
+  }
+
+  a:last-child:hover {
+    box-shadow: inset 0 0 0 2px #092851;
+  }
 `
 
 const SupportSection = styled(Section)`
@@ -91,7 +121,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <HeroSection>
+      <HeroSection id="newsletter">
         <h1>Meet and collab with other React developers in Cebu</h1>
         <p>React Cebu is a community for developers by developers</p>
         <Newsletter />
@@ -116,7 +146,6 @@ const IndexPage = () => {
           <Img
             fluid={data.reactorsCollaborating.childImageSharp.fluid}
             alt="Reactors collaborating"
-            style={{}}
           />
         </div>
       </BecomePartSection>
@@ -138,7 +167,7 @@ const IndexPage = () => {
       <MarketingSection>
         <h2>Never miss an event!</h2>
         <Link to="#newsletter">Join Newsletter</Link>
-        <Link to="https://www.facebook.com/reactcebu">
+        <Link to="https://www.facebook.com/reactcebu" target="_blank">
           Follow us on Facebook
         </Link>
       </MarketingSection>
