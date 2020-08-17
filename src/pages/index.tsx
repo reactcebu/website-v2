@@ -117,7 +117,6 @@ const IndexPage = () => {
       }
     }
   `)
-  console.log("IndexPage -> data", data)
 
   return (
     <Layout>
