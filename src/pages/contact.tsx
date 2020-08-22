@@ -1,7 +1,7 @@
 import { Layout } from "../components"
 import React from "react"
 
-const AboutPage = () => {
+const ContactPage = () => {
   return (
     <Layout>
       <div
@@ -11,10 +11,10 @@ const AboutPage = () => {
           justifyContent: "center",
         }}
       >
-        <h2>About page coming soon...</h2>
+        <h2>Contact page coming soon...</h2>
       </div>
     </Layout>
   )
 }
 
-export default AboutPage
+export default ContactPage
