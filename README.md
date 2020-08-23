@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://react.jscebu.org">
-    <img alt="React Cebu" src="https://reactcebu-sitev2.netlify.app/static/logo-70642a5a45ddc07fcb0fb2b893d7124c.png"  />
+    <img alt="React Cebu" src="https://res.cloudinary.com/dorelljames/image/upload/v1598156765/logo_lmgjau.png"  />
   </a>
 </p>
 <h1 align="center">
