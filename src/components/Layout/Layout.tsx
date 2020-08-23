@@ -8,7 +8,6 @@
 import { Footer, GlobalStyles, Header, SEO } from "../index"
 import { graphql, useStaticQuery } from "gatsby"
 
-import { Container } from "./Layout.styles"
 import PropTypes from "prop-types"
 import React from "react"
 
@@ -24,7 +23,7 @@ export const Layout = ({ children }) => {
   `)
 
   return (
-    <Container>
+    <>
       <GlobalStyles />
       <SEO
         title="Reactors Homepage"
@@ -33,7 +32,7 @@ export const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} />
       <main>{children}</main>
       <Footer />
-    </Container>
+    </>
   )
 }
 
