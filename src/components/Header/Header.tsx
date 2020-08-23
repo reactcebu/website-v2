@@ -1,7 +1,8 @@
-import React from "react"
+import { HeaderStyled, NavLinks, StyledButton } from "./Header.styles"
+import { Link, graphql, useStaticQuery } from "gatsby"
+
 import Img from "gatsby-image"
-import { Link, useStaticQuery, graphql } from "gatsby"
-import { HeaderStyled, NavLinks, Button } from "./Header.styles"
+import React from "react"
 
 interface ComponentProps {
   siteTitle: string
@@ -32,7 +33,7 @@ export const Header: React.FC<ComponentProps> = ({
         <Link to="/events">Events</Link>
         <Link to="/contact">Contact</Link>
       </NavLinks>
-      <Button>Support Us</Button>
+      <StyledButton>Support Us</StyledButton>
     </HeaderStyled>
   )
 }
