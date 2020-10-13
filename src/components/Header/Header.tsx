@@ -1,8 +1,19 @@
-import { HeaderStyled, NavLinks, StyledButton } from "./Header.styles"
+import {
+  HeaderStyled,
+  LinkStyled,
+  Nav,
+  StyledBurger,
+  StyledButton,
+} from "./Header.styles"
 import { Link, graphql, useStaticQuery } from "gatsby"
 
 import Img from "gatsby-image"
-import React from "react"
+import React, { useEffect, useRef, useState } from "react"
+import {
+  disableBodyScroll,
+  enableBodyScroll,
+  clearAllBodyScrollLocks,
+} from "body-scroll-lock"
 
 interface ComponentProps {
   siteTitle: string
@@ -23,17 +34,45 @@ export const Header: React.FC<ComponentProps> = ({
     }
   `)
 
+  const navRef = useRef(null)
+
+  const [showMenu, setShowMenu] = useState<boolean>(false)
+
+  useEffect(() => {
+    if (showMenu) {
+      disableBodyScroll(navRef.current)
+    } else {
+      enableBodyScroll(navRef.current)
+    }
+
+    return () => {
+      clearAllBodyScrollLocks()
+    }
+  }, [showMenu])
+
   return (
     <HeaderStyled>
-      <Link to="/" style={{ width: "300px" }}>
-        <Img fluid={data.logo.childImageSharp.fluid} />
-      </Link>
-      <NavLinks>
+      <LinkStyled to="/">
+        <Img fluid={data.logo.childImageSharp.fluid} alt={siteTitle} />
+      </LinkStyled>
+
+      <StyledBurger
+        aria-label="Toggle menu"
+        isOpen={showMenu}
+        onClick={() => setShowMenu(!showMenu)}
+      >
+        <span />
+        <span />
+        <span />
+      </StyledBurger>
+
+      <Nav ref={navRef} isOpen={showMenu}>
         <Link to="/about">About</Link>
         <Link to="/events">Events</Link>
         <Link to="/contact">Contact</Link>
-      </NavLinks>
-      <StyledButton>Support Us</StyledButton>
+
+        <StyledButton>Support Us</StyledButton>
+      </Nav>
     </HeaderStyled>
   )
 }
