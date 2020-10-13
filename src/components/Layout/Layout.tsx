@@ -11,6 +11,8 @@ import { graphql, useStaticQuery } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+import { LayoutContainer } from "./Layout.styles"
+
 export const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -23,7 +25,7 @@ export const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <LayoutContainer>
       <GlobalStyles />
       <SEO
         title="Reactors Homepage"
@@ -32,7 +34,7 @@ export const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} />
       <main>{children}</main>
       <Footer />
-    </>
+    </LayoutContainer>
   )
 }
 

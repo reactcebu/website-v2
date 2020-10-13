@@ -191,7 +191,6 @@ export const GlobalStyles = createGlobalStyle`
   html {
     font: 112.5%/1.45em georgia, serif;
     box-sizing: border-box;
-    overflow-y: scroll;
   }
   * {
     box-sizing: inherit;
