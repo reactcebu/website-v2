@@ -29,6 +29,7 @@ module.exports = {
         icon: `src/assets/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    "gatsby-plugin-styled-components",
     {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
