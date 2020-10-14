@@ -34,6 +34,7 @@ export const Nav = styled.nav<{ isOpen: boolean }>`
   right: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
   transition: right 0.3s ease;
   background-color: #fff;
+  z-index: 5;
 
   @media ${breakpoints.md} {
     margin-left: 48px;
@@ -86,6 +87,7 @@ export const StyledBurger = styled.button<{ isOpen: boolean }>`
   padding: 0;
   margin-left: auto;
   z-index: 10;
+  outline: none;
 
   @media ${breakpoints.md} {
     display: none;
