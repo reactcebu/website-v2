@@ -188,6 +188,17 @@ const BecomePartSection = styled(Section)`
       min-width: 450px;
     }
   }
+  @media only screen and (max-width: 640px) {
+    h2 {
+      font-size: 48px;
+    }
+    div: first-child {
+      font-size: 24px;
+    }
+    div: last-child {
+      min-width: 380px;
+    }
+  }
 `
 
 const MarketingSection = styled(Section)`
