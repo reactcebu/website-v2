@@ -3,6 +3,8 @@ import {
   StyledButton as Button,
   Form,
   TextField,
+  Row,
+  Column,
 } from "./Newsletter.styles"
 import React, { useRef, useState } from "react"
 
@@ -63,16 +65,31 @@ export const Newsletter: React.FC = () => {
         className="validate"
         target="_blank"
       >
-        <TextField
-          type="email"
-          name="email"
-          className="email"
-          id="mce-EMAIL"
-          placeholder="Your email address"
-          ref={emailInput}
-          required
-        />
-        <Button>Join Newsletter</Button>
+        <Row>
+          <Column xs="12" sm="6" md="8">
+            <TextField
+              type="email"
+              name="email"
+              className="email"
+              id="mce-EMAIL"
+              placeholder="Your email address"
+              ref={emailInput}
+              required
+            />
+          </Column>
+          <Column xs="12" sm="6" md="8">
+            <Button>Join Newsletter</Button>
+          </Column>
+          {/* <TextField
+            type="email"
+            name="email"
+            className="email"
+            id="mce-EMAIL"
+            placeholder="Your email address"
+            ref={emailInput}
+            required
+          /> */}
+        </Row>
         <div
           style={{ position: `absolute`, left: `-5000px` }}
           aria-hidden="true"
