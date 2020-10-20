@@ -138,6 +138,9 @@ const SectionLink = styled(Link)`
     display: inline-block;
     margin-left: 0.5em;
   }
+  @media only screen and (max-width: 1024px) {
+    padding-bottom: 30px;
+  }
 `
 
 const HeroSection = styled(Section)`
@@ -168,6 +171,33 @@ const BecomePartSection = styled(Section)`
   div:last-child {
     min-width: 498px;
     max-width: 100%:
+  }
+
+  @media only screen and (max-width: 1024px) {
+    flex-direction: column;
+    h2 {
+      text-align: center;
+    }
+    div:first-child {
+      text-align: center;
+      padding-bottom: 20px;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    div:last-child {
+      min-width: 450px;
+    }
+  }
+  @media only screen and (max-width: 640px) {
+    h2 {
+      font-size: 48px;
+    }
+    div: first-child {
+      font-size: 24px;
+    }
+    div: last-child {
+      min-width: 380px;
+    }
   }
 `
 
