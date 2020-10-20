@@ -4,8 +4,6 @@ import { Link, graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import React from "react"
 import styled from "styled-components"
-import { Row, Column } from "../components/Newsletter/Newsletter.styles"
-
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     query {
