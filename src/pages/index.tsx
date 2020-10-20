@@ -4,6 +4,7 @@ import { Link, graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import React from "react"
 import styled from "styled-components"
+import { Row, Column } from "../components/Newsletter/Newsletter.styles"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -75,10 +76,20 @@ const IndexPage = () => {
 
       <MarketingSection>
         <h2>Never miss an event!</h2>
-        <Link to="#newsletter">Join Newsletter</Link>
-        <Link to="https://www.facebook.com/reactcebu" target="_blank">
-          Follow us on Facebook
-        </Link>
+        <div className="container">
+          <div className="row">
+            <div className="column">
+              <br />
+              <Link to="#newsletter">Join Newsletter</Link>
+            </div>
+            <div className="column">
+              <br />
+              <Link to="https://www.facebook.com/reactcebu" target="_blank">
+                Follow us on Facebook
+              </Link>
+            </div>
+          </div>
+        </div>
       </MarketingSection>
     </Layout>
   )
@@ -202,22 +213,44 @@ const BecomePartSection = styled(Section)`
 `
 
 const MarketingSection = styled(Section)`
-  max-width: 100%;
   background-color: #092851;
   color: #fafafa;
   padding: 80px 0;
 
-  > h2 {
-    margin-bottom: 28px;
+  .column {
+    float: left;
+    padding: 10px;
   }
 
-  > a {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+  > h2 {
+    margin-bottom: 28px;
+    width: 100% !important;
+  }
+
+  .column a {
     color: #092851;
     background-color: #fff;
     padding: 20px 25px;
     text-decoration: none;
     font-size: 20px;
     margin-left: 15px;
+    line-height: 3;
     border-radius: 4px;
     transition: box-shadow 420ms cubic-bezier(0.165, 0.84, 0.44, 1),
       color 420ms cubic-bezier(0.165, 0.84, 0.44, 1),
