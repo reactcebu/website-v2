@@ -1,6 +1,42 @@
 import { Button } from "../Button"
 import styled from "styled-components"
 
+const getWidthString = span => {
+  if (!span) return
+
+  let width = (span / 12) * 100
+  return `${width}%;`
+}
+
+export const Row = styled.div`
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+`
+
+export const Column = styled.div`
+  float: none;
+  margin-top: 10px;
+  ${({ xs }) => (xs ? getWidthString(xs) : "width:100%;")};
+
+  @media only screen and (min-width: 768px) {
+    float: left;
+    ${({ sm }) => sm && getWidthString(sm)};
+  }
+
+  @media only screen and (min-width: 992px) {
+    float: left;
+    ${({ md }) => md && getWidthString(md)};
+  }
+
+  @media only screen and (min-width: 1200px) {
+    float: left;
+    ${({ lg }) => lg && getWidthString(lg)};
+  }
+`
+
 export const StyledButton = styled(Button)`
   font-size: 18px;
   border-radius: 4px;
