@@ -81,10 +81,11 @@ export const Alert = styled.p<{ status: string }>`
       ? "#c3e6cb"
       : "#c3e6cb"};
   padding: 18px;
-  max-width: 1440px;
   border: 1px solid transparent;
   border-radius: 4px;
-  max-width: fit-content;
   margin: 0 auto;
   margin-bottom: 20px;
+  line-height: 150%;
+  max-width: 800px;
+  font-style: italic;
 `
