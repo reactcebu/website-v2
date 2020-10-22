@@ -95,7 +95,7 @@ const IndexPage = () => {
 
 const Section = styled.section`
   display: block;
-  max-width: 1440px;
+  // max-width: 1440px;
   // border: 1px solid red;
   margin: 0 auto;
   text-align: center;
@@ -255,11 +255,11 @@ const MarketingSection = styled(Section)`
       background 420ms cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 
-  > a:first-child {
+  .column a:first-child {
     margin-right: 15px;
   }
 
-  > a:last-child {
+  .column:last-child a:last-child {
     border: 1px solid #fff;
     background-color: #092851;
     color: #fff;
