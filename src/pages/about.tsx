@@ -1,5 +1,6 @@
-import { Layout } from "../components"
 import React from "react"
+import { Layout } from "../components"
+import FirstMeetup from "../assets/images/react-cebu-first-meetup.jpg"
 import styled from "styled-components"
 
 const AboutPage = () => {
@@ -10,6 +11,10 @@ const AboutPage = () => {
         <br />
         <br />
 
+        <img src={FirstMeetup} alt="React Cebu First Meetup" />
+
+        <br />
+        <br />
         <p>
           We, <strong>React Cebu</strong>, aims to spread the usage of React JS
           and other JavaScript technologies to the community by organizing free
