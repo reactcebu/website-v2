@@ -8,11 +8,11 @@ export const FooterContainer = styled.div`
 
 export const Container = styled.div`
   margin: 0 auto;
-  padding: 24px;
   @media ${breakpoints.sm} {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 24px;
   }
 `
 
@@ -42,8 +42,10 @@ export const Top = styled.div`
 `
 export const Center = styled.div`
   width: 300px;
-  margin-left: 50px;
   padding: 30px 10px;
+  @media ${breakpoints.sm} {
+    margin-left: 50px;
+  }
 `
 
 export const ListItem = styled.li`
