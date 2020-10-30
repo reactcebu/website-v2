@@ -1,13 +1,12 @@
 import styled from "styled-components"
 import { breakpoints } from "../Shared"
 
-export const FooterContainer = styled.footer`
+export const FooterContainer = styled.div`
   padding: 24px 48px;
   background-color: gainsboro;
 `
 
 export const Container = styled.div`
-  max-width: 1440px;
   margin: 0 auto;
   padding: 24px;
   @media ${breakpoints.sm} {
@@ -31,8 +30,8 @@ export const List = styled.ul`
   }
 `
 
-export const MainFooter = styled.section`
-  max-width: 1440px;
+export const MainFooter = styled.footer`
+  width: 100%;
 `
 
 export const Top = styled.div`
