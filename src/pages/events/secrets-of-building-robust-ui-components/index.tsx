@@ -13,7 +13,17 @@ const EventsPageSecretsOfBuildingRobustUiComponents = () => {
           about React.
         </p>
         <p>Date: Friday, January 13, 2023 - 7pm onwards...</p>
-        <p>The Company Cebu (IT Park)</p>
+        <p>Location: The Company Cebu IT Park)</p>
+        <p>
+          Event ref:{" "}
+          <a
+            href="https://facebook.com/events/1390943205043835"
+            target="_blank"
+            rel="nofollow"
+          >
+            https://facebook.com/events/1390943205043835
+          </a>
+        </p>
         <br />
         <p>Fill out the form below to reserve your spot!</p>
         <br />
