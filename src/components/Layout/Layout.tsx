@@ -11,7 +11,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
-import { LayoutContainer } from "./Layout.styles"
+import { LayoutContainer, LayoutContainerMain } from "./Layout.styles"
 
 export const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -32,7 +32,7 @@ export const Layout = ({ children }) => {
         description="A community for developers by developers"
       />
       <Header siteTitle={data.site.siteMetadata.title} />
-      <main>{children}</main>
+      <LayoutContainerMain>{children}</LayoutContainerMain>
       <Footer />
     </LayoutContainer>
   )

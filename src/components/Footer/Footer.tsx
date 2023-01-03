@@ -84,13 +84,8 @@ export const Footer: React.FC<ComponentProps> = ({
       <FooterContainer>
         <Container>
           <List>
-            {links.map(function (link) {
-              return (
-                <ListItem key={link}>
-                  <Link href={`/${link?.toLowerCase()}`}>{link}</Link>
-                </ListItem>
-              )
-            })}
+            Copyright {new Date().getFullYear()} © {siteTitle || "React Cebu"}.
+            All rights reserved.
           </List>
           <List>
             {icons.map(function (icon) {

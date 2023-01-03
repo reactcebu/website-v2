@@ -3,7 +3,7 @@ import { breakpoints } from "../Shared"
 
 export const FooterContainer = styled.div`
   padding: 24px 48px;
-  background-color: gainsboro;
+  bottom: 0;
 `
 
 export const Container = styled.div`
