@@ -1,7 +1,17 @@
 import { Layout } from "../../../components"
 import React from "react"
 
-const EventsPageSecretsOfBuildingRobustUiComponents = () => {
+const EventsPageBetterCodeReviews = () => {
+  React.useEffect(() => {
+    var script = document.createElement("script")
+    script.id = "ff-script"
+    script.src =
+      "https://formfacade.com/include/114958130307901205679/form/1FAIpQLSfDBCmncz0tjdR21v96ry4QCLRp7RhdL8RgZYfjzvoB6M5ERw/classic.js?div=ff-compose"
+    script.defer = true
+    script.async = true
+    document.body.appendChild(script)
+  }, [])
+
   return (
     <Layout>
       <div style={{ padding: "4rem" }}>
@@ -40,21 +50,10 @@ const EventsPageSecretsOfBuildingRobustUiComponents = () => {
         <p>Fill out the form below to reserve your spot!</p>
         <br />
 
-        <div style={{ marginLeft: "0px", marginRight: "0px" }}>
-          <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSfDBCmncz0tjdR21v96ry4QCLRp7RhdL8RgZYfjzvoB6M5ERw/viewform?embedded=true"
-            width="100%"
-            height="3000px"
-            frameborder="0"
-            marginheight="0"
-            marginwidth="0"
-          >
-            Loading RVSP form…
-          </iframe>
-        </div>
+        <div id="ff-compose"></div>
       </div>
     </Layout>
   )
 }
 
-export default EventsPageSecretsOfBuildingRobustUiComponents
+export default EventsPageBetterCodeReviews
