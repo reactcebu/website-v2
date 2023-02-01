@@ -616,4 +616,7 @@ export const GlobalStyles = createGlobalStyle`
       font-size: 100%;
     }
   }
+  .ff-button-bar a.ff-powered-img {
+    visibility: hidden !important;
+  }
 `
