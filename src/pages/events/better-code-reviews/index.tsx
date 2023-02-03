@@ -23,18 +23,26 @@ const EventsPageBetterCodeReviews = () => {
           code reviews and get a better understanding on how to do it
           effectively. Thank you{" "}
           <a
+            href="https://www.facebook.com/TheCompanyITPark"
+            target="_blank"
+            rel="nofollow"
+          >
+            The Company CEBU (IT Park)
+          </a>{" "}
+          and{" "}
+          <a
             href="https://www.facebook.com/LegalMatchPH"
             target="_blank"
             rel="nofollow"
           >
             LegalMatch Philippines
           </a>{" "}
-          for having us once again.
+          for having us once again and for the food!
         </p>
         <p>Date: Sat, Feb 18, 2023 - 1pm onwards...</p>
         <p>
-          Location: LegalMatch Philippines at AppleOne Equicom Tower, Cebu City,
-          6000 Cebu
+          Location: The Company Cebu IT Park, 6th Floor, Mabuhay Tower, Abad St,
+          Cebu City, 6000 Cebu
         </p>
         <p>
           Event ref:{" "}
