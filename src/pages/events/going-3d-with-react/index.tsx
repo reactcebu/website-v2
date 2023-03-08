@@ -40,9 +40,12 @@ const EventsPageBetterCodeReviews = () => {
           </a>{" "}
           for having us once again and for the food!
         </p> */}
-        <p>Date: TBD</p>
-        <p>Location: TBD</p>
-        {/* <p>
+        <p>Date: March 18, 2023 - 1pm to 4pm</p>
+        <p>
+          Location: The Company Cebu IT Park, 6th Floor, Mabuhay Tower, Abad St,
+          Cebu City, 6000 Cebu
+        </p>
+        <p>
           Event ref:{" "}
           <a
             href="https://www.facebook.com/events/3309940759253609"
@@ -51,7 +54,7 @@ const EventsPageBetterCodeReviews = () => {
           >
             https://www.facebook.com/events/3309940759253609
           </a>
-        </p> */}
+        </p>
         <br />
         <p style={{ textAlign: "center" }}>
           Fill out the form below to reserve your spot!
