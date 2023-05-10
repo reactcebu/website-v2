@@ -32,6 +32,25 @@ const EventsPage = () => {
         <p>Date: Sat, May 27, 2023 - 3pm onwards...</p>
         <p>Location: Enspace Cebu</p>
         <p>
+          Special thanks to{" "}
+          <a
+            href="https://www.facebook.com/enspacecebu"
+            target="_blank"
+            rel="nofollow"
+          >
+            enspace Cebu
+          </a>{" "}
+          and{" "}
+          <a
+            href="https://www.facebook.com/LegalMatchPH"
+            target="_blank"
+            rel="nofollow"
+          >
+            LegalMatch Philippines
+          </a>{" "}
+          for having us once again and for the food!
+        </p>
+        <p>
           Event ref:{" "}
           <a
             href="https://www.facebook.com/events/799914648148023"
