@@ -1,11 +1,10 @@
 import React from "react"
-import { Layout } from "../components"
 import FirstMeetup from "../assets/images/react-cebu-first-meetup.jpg"
 import styled from "styled-components"
 
 const AboutPage = () => {
   return (
-    <Layout>
+    <>
       <Section>
         <h2>React Cebu — a community for developers by developers</h2>
         <br />
@@ -43,7 +42,7 @@ const AboutPage = () => {
           <a href={"mailto: react@jscebu.org"}>react@jscebu.org</a>
         </p>
       </Section>
-    </Layout>
+    </>
   )
 }
 

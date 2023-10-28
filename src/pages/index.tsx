@@ -1,4 +1,4 @@
-import { Layout, Newsletter } from "../components"
+import { Newsletter } from "../components"
 import { Link, graphql, useStaticQuery } from "gatsby"
 
 import { StaticImage } from "gatsby-plugin-image"
