@@ -5,7 +5,7 @@ import {
   StyledBurger,
   StyledButton,
 } from "./Header.styles"
-import { Link, graphql, useStaticQuery } from "gatsby"
+import { Link } from "gatsby"
 
 import { StaticImage } from "gatsby-plugin-image"
 import React, { useEffect, useRef, useState } from "react"

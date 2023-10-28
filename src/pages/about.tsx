@@ -1,6 +1,6 @@
 import React from "react"
-import FirstMeetup from "../assets/images/react-cebu-first-meetup.jpg"
 import styled from "styled-components"
+import { StaticImage } from "gatsby-plugin-image"
 
 const AboutPage = () => {
   return (
@@ -10,7 +10,10 @@ const AboutPage = () => {
         <br />
         <br />
 
-        <img src={FirstMeetup} alt="React Cebu First Meetup" />
+        <StaticImage
+          alt="First meetup"
+          src="../assets/images/react-cebu-first-meetup.jpg"
+        />
 
         <br />
         <br />
