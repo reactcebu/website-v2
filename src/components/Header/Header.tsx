@@ -26,7 +26,7 @@ export const Header: React.FC<ComponentProps> = ({
     query {
       logo: file(relativePath: { eq: "logo.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 250) {
             ...GatsbyImageSharpFluid
           }
         }
