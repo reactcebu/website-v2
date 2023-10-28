@@ -64,13 +64,13 @@ const IndexPage = () => {
         <SectionLink to="/contact">Let’s support each other</SectionLink>
       </SupportSection>
 
-      <Section>
+      <CommunitySection>
         <h2>From Our Community</h2>
         <p>
           Proudly presenting the contributions of everyone who helped us achieve
           more.
         </p>
-      </Section>
+      </CommunitySection>
 
       <MarketingSection>
         <h2>Never miss an event!</h2>
@@ -100,7 +100,7 @@ const Section = styled.section`
   margin: 0 auto;
   text-align: center;
   font-size: 28px;
-  padding: 60px 20px;
+  padding: 80px 20px;
 
   h2 {
     font-size: 60px;
@@ -153,20 +153,32 @@ const SectionLink = styled(Link)`
 `
 
 const HeroSection = styled(Section)`
-  padding: 80px 0;
+  padding: 40px 0;
 
   h1 {
     font-size: 72px;
     max-width: 900px;
     margin: 0 auto;
-    margin-bottom: 18px;
+    margin-bottom: 40px;
+  }
+
+  p {
+    margin-bottom: 26px;
+  }
+
+  @media (min-width: 768px) {
+  }
+  @media (min-width: 992px) {
+    padding: 200px 0;
+  }
+  @media (min-width: 1280px) {
   }
 `
 const BecomePartSection = styled(Section)`
   display: flex;
   justify-content: space-around;
   align-items: center;
-
+  padding: 240px 0;
   h2 {
     text-align: left;
   }
@@ -268,6 +280,10 @@ const MarketingSection = styled(Section)`
   a:last-child:hover {
     box-shadow: inset 0 0 0 2px #092851;
   }
+`
+
+const CommunitySection = styled(Section)`
+  padding: 200px 0;
 `
 
 const SupportSection = styled(Section)`
