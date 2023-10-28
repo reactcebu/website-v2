@@ -32,15 +32,18 @@ const EventsPage = () => {
 const EventCard = styled.div`
   border: 1px solid #e6e6e6;
   border-radius: 10px;
+  max-width: 300px;
 `
 
 const EventContainer = styled.div`
   min-height: 50vh;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 20px;
   flex-direction: column;
   padding: 0 40px 0 40px;
+  flex-wrap: wrap;
 
   img {
     width: 100%;
