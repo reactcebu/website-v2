@@ -4,7 +4,7 @@ import { breakpoints } from "../Shared"
 
 export const HeaderStyled = styled.header`
   max-width: 1440px;
-  padding: 24px;
+  padding: 20px;
   margin-bottom: 1.45rem;
   display: flex;
   align-items: center;
