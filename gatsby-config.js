@@ -7,7 +7,7 @@ module.exports = {
     author: `@reactcebu`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    "gatsby-plugin-image",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -16,7 +16,16 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          placeholder: "blurred",
+          quality: 100,
+        },
+      },
+    },
+    "gatsby-transformer-sharp",
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -39,9 +48,6 @@ module.exports = {
         },
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 
   // for avoiding CORS while developing Netlify Functions locally

@@ -1,4 +1,3 @@
-import { Layout } from "../../../components"
 import React from "react"
 
 const EventsPage = () => {
@@ -13,7 +12,7 @@ const EventsPage = () => {
   }, [])
 
   return (
-    <Layout>
+    <>
       <div style={{ padding: "4rem" }}>
         <h2 style={{ fontSize: "3rem" }}>
           Embracing TPRC: Move Fast and Break Nothing with End-to-End Typesafe
@@ -66,7 +65,7 @@ const EventsPage = () => {
 
         <div id="ff-compose" />
       </div>
-    </Layout>
+    </>
   )
 }
 

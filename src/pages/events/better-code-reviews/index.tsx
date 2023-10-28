@@ -1,4 +1,3 @@
-import { Layout } from "../../../components"
 import React from "react"
 
 const EventsPageBetterCodeReviews = () => {
@@ -13,7 +12,7 @@ const EventsPageBetterCodeReviews = () => {
   }, [])
 
   return (
-    <Layout>
+    <>
       <div style={{ padding: "4rem" }}>
         <h2 style={{ fontSize: "3rem" }}>
           In-Person Meetup: Better Code Reviews
@@ -60,7 +59,7 @@ const EventsPageBetterCodeReviews = () => {
 
         <div id="ff-compose"></div>
       </div>
-    </Layout>
+    </>
   )
 }
 

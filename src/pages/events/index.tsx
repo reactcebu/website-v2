@@ -1,9 +1,8 @@
-import { Layout } from "../../components"
 import React from "react"
 
 const EventsPage = () => {
   return (
-    <Layout>
+    <>
       <div
         style={{
           display: "flex",
@@ -13,8 +12,18 @@ const EventsPage = () => {
       >
         <h2>Events page coming soon...</h2>
       </div>
-    </Layout>
+    </>
   )
 }
+
+export const Head = () => (
+  <>
+    <title>Reactors Homepage</title>
+    <meta
+      name="description"
+      content="A community for developers by developers"
+    />
+  </>
+)
 
 export default EventsPage

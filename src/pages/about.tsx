@@ -1,17 +1,19 @@
 import React from "react"
-import { Layout } from "../components"
-import FirstMeetup from "../assets/images/react-cebu-first-meetup.jpg"
 import styled from "styled-components"
+import { StaticImage } from "gatsby-plugin-image"
 
 const AboutPage = () => {
   return (
-    <Layout>
+    <>
       <Section>
         <h2>React Cebu — a community for developers by developers</h2>
         <br />
         <br />
 
-        <img src={FirstMeetup} alt="React Cebu First Meetup" />
+        <StaticImage
+          alt="First meetup"
+          src="../assets/images/react-cebu-first-meetup.jpg"
+        />
 
         <br />
         <br />
@@ -43,9 +45,19 @@ const AboutPage = () => {
           <a href={"mailto: react@jscebu.org"}>react@jscebu.org</a>
         </p>
       </Section>
-    </Layout>
+    </>
   )
 }
+
+export const Head = () => (
+  <>
+    <title>Reactors Homepage</title>
+    <meta
+      name="description"
+      content="A community for developers by developers"
+    />
+  </>
+)
 
 const Section = styled.section`
   display: block;

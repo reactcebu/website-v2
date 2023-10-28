@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import { Footer, GlobalStyles, Header, SEO } from "../index"
+import { Footer, GlobalStyles, Header } from "../index"
 import { graphql, useStaticQuery } from "gatsby"
 
 import PropTypes from "prop-types"
@@ -27,10 +27,6 @@ export const Layout = ({ children }) => {
   return (
     <LayoutContainer>
       <GlobalStyles />
-      <SEO
-        title="Reactors Homepage"
-        description="A community for developers by developers"
-      />
       <Header siteTitle={data.site.siteMetadata.title} />
       <LayoutContainerMain>{children}</LayoutContainerMain>
       <Footer />
