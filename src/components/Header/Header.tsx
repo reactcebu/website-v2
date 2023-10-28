@@ -41,7 +41,7 @@ export const Header: React.FC<ComponentProps> = ({
   return (
     <HeaderStyled>
       <LinkStyled to="/">
-        <StaticImage src="../assets/images/logo.png" alt={siteTitle} />
+        <StaticImage src="../../assets/images/logo.png" alt={siteTitle} />
       </LinkStyled>
 
       <StyledBurger
