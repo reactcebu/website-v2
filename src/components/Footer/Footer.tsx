@@ -90,8 +90,8 @@ export const Footer: React.FC<ComponentProps> = ({
           <List>
             {icons.map(function (icon) {
               return (
-                <ListItem key={icon.id} target="_blank">
-                  <Link href={`${icon.path}`}>{icon.icon}</Link>
+                <ListItem key={icon.id}>
+                  <Link href={`${icon.path}`}  target="_blank">{icon.icon}</Link>
                 </ListItem>
               )
             })}
