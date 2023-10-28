@@ -1,34 +1,14 @@
-import { Layout, Newsletter, SEO } from "../components"
+import { Layout, Newsletter } from "../components"
 import { Link, graphql, useStaticQuery } from "gatsby"
 
-import Img from "gatsby-image"
+import { StaticImage } from "gatsby-plugin-image"
+
 import React from "react"
 import styled from "styled-components"
-const IndexPage = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      reactorsChat: file(relativePath: { eq: "reactors-chat.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 1082) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      reactorsCollaborating: file(
-        relativePath: { eq: "reactors-collaborating.png" }
-      ) {
-        childImageSharp {
-          fluid(maxWidth: 498) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
 
+const IndexPage = () => {
   return (
-    <Layout>
-      <SEO title="We are Reactors!" />
+    <>
       <HeroSection id="newsletter">
         <h1>Meet and collab with other React developers in Cebu</h1>
         <p>React Cebu is a community for developers by developers</p>
@@ -37,8 +17,8 @@ const IndexPage = () => {
 
       <Section>
         <h2>You are not alone, we're here</h2>
-        <Img
-          fluid={data.reactorsChat.childImageSharp.fluid}
+        <StaticImage
+          src="../assets/images/reactors-chat.png"
           alt="Chat with reactors"
           style={{ maxWidth: `900px`, margin: `0 auto`, marginTop: `30px` }}
         />
@@ -51,8 +31,8 @@ const IndexPage = () => {
           <SectionLink to="/about">Be a Reactor today</SectionLink>
         </div>
         <div>
-          <Img
-            fluid={data.reactorsCollaborating.childImageSharp.fluid}
+          <StaticImage
+            src="../assets/images/reactors-collaborating.png"
             alt="Reactors collaborating"
           />
         </div>
@@ -89,9 +69,15 @@ const IndexPage = () => {
           </div>
         </div>
       </MarketingSection>
-    </Layout>
+    </>
   )
 }
+
+export const Head = () => (
+  <>
+    <title>We are Reactors!</title>
+  </>
+)
 
 const Section = styled.section`
   display: block;

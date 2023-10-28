@@ -2,15 +2,12 @@ import {
   Container,
   FooterContainer,
   MainFooter,
-  Top,
-  Center,
   Link,
   List,
   ListItem,
 } from "./Footer.styles"
 
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
 
 interface ComponentProps {
   siteTitle?: string
@@ -68,17 +65,6 @@ const icons = [
 export const Footer: React.FC<ComponentProps> = ({
   siteTitle,
 }: ComponentProps) => {
-  const data = useStaticQuery(graphql`
-    query {
-      logo: file(relativePath: { eq: "logo.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
   return (
     <MainFooter>
       <FooterContainer>

@@ -47,6 +47,16 @@ const AboutPage = () => {
   )
 }
 
+export const Head = () => (
+  <>
+    <title>Reactors Homepage</title>
+    <meta
+      name="description"
+      content="A community for developers by developers"
+    />
+  </>
+)
+
 const Section = styled.section`
   display: block;
   max-width: 1440px;

@@ -7,7 +7,7 @@ import {
 } from "./Header.styles"
 import { Link, graphql, useStaticQuery } from "gatsby"
 
-import Img from "gatsby-image"
+import { StaticImage } from "gatsby-plugin-image"
 import React, { useEffect, useRef, useState } from "react"
 import {
   disableBodyScroll,
@@ -22,18 +22,6 @@ interface ComponentProps {
 export const Header: React.FC<ComponentProps> = ({
   siteTitle,
 }: ComponentProps) => {
-  const data = useStaticQuery(graphql`
-    query {
-      logo: file(relativePath: { eq: "logo.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
-
   const navRef = useRef(null)
 
   const [showMenu, setShowMenu] = useState<boolean>(false)
@@ -53,7 +41,7 @@ export const Header: React.FC<ComponentProps> = ({
   return (
     <HeaderStyled>
       <LinkStyled to="/">
-        <Img fluid={data.logo.childImageSharp.fluid} alt={siteTitle} />
+        <StaticImage src="../assets/images/logo.png" alt={siteTitle} />
       </LinkStyled>
 
       <StyledBurger

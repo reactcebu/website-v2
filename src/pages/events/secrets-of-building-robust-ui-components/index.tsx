@@ -1,9 +1,8 @@
-import { Layout } from "../../../components"
 import React from "react"
 
 const EventsPageSecretsOfBuildingRobustUiComponents = () => {
   return (
-    <Layout>
+    <>
       <div style={{ padding: "4rem" }}>
         <h2 style={{ fontSize: "3rem" }}>
           Talk: Secrets Of Building Robust UI Components
@@ -44,7 +43,7 @@ const EventsPageSecretsOfBuildingRobustUiComponents = () => {
           </iframe>
         </div>
       </div>
-    </Layout>
+    </>
   )
 }
 
