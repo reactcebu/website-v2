@@ -70,6 +70,12 @@ export const StyledButton = styled.button`
   border: 1px solid transparent;
   border-radius: 4px;
 
+  &:hover {
+    background-color: white;
+    color: hsl(240, 74%, 31%);
+    border-color: hsl(240, 74%, 31%);
+  }
+
   @media ${breakpoints.md} {
     margin-left: auto;
   }

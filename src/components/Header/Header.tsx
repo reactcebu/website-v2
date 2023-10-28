@@ -71,7 +71,9 @@ export const Header: React.FC<ComponentProps> = ({
         <Link to="/events">Events</Link>
         <Link to="/contact">Contact</Link>
 
-        <StyledButton>Support Us</StyledButton>
+        <StyledButton>
+          <Link to="/support">Support Us</Link>
+        </StyledButton>
       </Nav>
     </HeaderStyled>
   )
