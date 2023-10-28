@@ -43,7 +43,7 @@
     "start:lambda": "netlify-lambda serve src/lambda",
     "develop": "gatsby clean && gatsby develop",
     "build:app": "npm run clean && gatsby build",
-    "build:lambda": "netlify-lambda build src/lambda",
+    "build:lambda": "NODE_OPTIONS='--openssl-legacy-provider' netlify-lambda build src/lambda",
     "build": "run-p build:**",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "serve": "gatsby serve",
