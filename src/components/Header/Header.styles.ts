@@ -55,6 +55,11 @@ export const Nav = styled.nav<{ isOpen: boolean }>`
     @media ${breakpoints.md} {
       margin-bottom: 0;
     }
+
+    &:hover {
+      font-weight: bold;
+      border-bottom: 3px solid hsl(240, 74%, 31%);
+    }
   }
 `
 
